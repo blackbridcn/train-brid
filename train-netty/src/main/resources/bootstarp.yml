@@ -1,0 +1,9 @@
+
+spring:
+  application:
+    name: train-netty
+  cloud:
+    config:
+      uri: http://127.0.0.1:8201
+      profile: dev
+      label: master

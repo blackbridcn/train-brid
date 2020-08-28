@@ -1,0 +1,14 @@
+
+server:
+       port: 8091
+
+       servlet:
+         context-path: /train/netty/
+spring:
+  application:
+    name: train-netty-server
+
+
+config:
+    cunt: 50
+    tport: 8215
