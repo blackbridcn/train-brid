@@ -8,10 +8,12 @@
         <version>2.3.3.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
+
     <groupId>com.brid.train</groupId>
     <artifactId>train-brid</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>train-brid</name>
+
     <description>Demo project for Spring Boot</description>
 
     <properties>

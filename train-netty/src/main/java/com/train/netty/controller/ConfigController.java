@@ -1,7 +1,6 @@
 package com.train.netty.controller;
 
 
-
 import com.train.netty.config.GlobalConfig;
 import com.train.netty.param.BaseParam;
 import com.train.netty.vo.ResponseVo;
@@ -13,6 +12,11 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Locale;
+
 
 @Slf4j
 @Api("配置Api")
@@ -29,8 +33,7 @@ public class ConfigController {
     @ApiOperation("service接口测试")
     @RequestMapping(value = "/api/test", method = RequestMethod.POST)
     public ResponseVo<BaseParam> test(@RequestBody BaseParam param) {
-        log.info("--------->  "+param.getCode());
-        //iTimeService.bind(param.getCode());
+        log.info("--------->  " + param.getCode());
         return ResponseVo.success(param);
     }
 
